@@ -3,7 +3,7 @@ Course project to create and document a tidy dataset
 
 ###Dataset
 
-Human Activity Recognition database built from the recordings of 30 subjects performing six different activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) while carrying a waist-mounted Samsung Galaxy S II smartphone with embedded inertial sensors. The experimental results were randomly partitioned into two sets, with 70% of the volunteers generating the training data, and the other 30% generating the test data.
+Human Activity Recognition database built from the recordings of 30 subjects performing six different activities (e.g., walking, sitting) while carrying a waist-mounted Samsung Galaxy S II smartphone with embedded inertial sensors. The experimental results were randomly partitioned into two sets, with 70% of the volunteers generating the training data, and the other 30% generating the test data.
 
 *Data source:* University of California, Irvine (UCI)
 
