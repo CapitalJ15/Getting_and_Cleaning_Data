@@ -19,7 +19,7 @@ Human Activity Recognition database built from the recordings of 30 subjects per
 
 * The dplyr package was used to create the second dataset as instructed in step 5.
 
-*The data are grouped by activity and subject, and the averages (means) within each group are calculated for each of the 66 “mean()” or “std()” features. The results are reduced to a wide-form tidy dataset of unique values consisting of 180 rows (30 subjects x 6 activities) and 68 columns (“Activity,” “Subject_ID,” and the 66 previously selected features). Rows are sorted by Activity (in alphabetical order) and then by Subject_ID (from 1 to 30). New feature column labels with the prefix “Mean of” are attached. This dataset of averages is named tidyset2.txt.
+* The data are grouped by activity and subject, and the averages (means) within each group are calculated for each of the 66 “mean()” or “std()” features. The results are reduced to a wide-form tidy dataset of unique values consisting of 180 rows (30 subjects x 6 activities) and 68 columns (“Activity,” “Subject_ID,” and the 66 previously selected features). Rows are sorted by Activity (in alphabetical order) and then by Subject_ID (from 1 to 30). New feature column labels with the prefix “Mean of” are attached. This dataset of averages is named tidyset2.txt.
 
 * To load the tidy dataset back into R, use the following code:  **read.table("tidyset2.txt", header=TRUE)**
 
