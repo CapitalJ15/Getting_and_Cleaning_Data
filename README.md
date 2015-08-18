@@ -7,6 +7,13 @@ Human Activity Recognition database built from the recordings of 30 subjects per
 
 *Data source:* University of California, Irvine (UCI)
 
+###Assignment
+
+* Merge the test and training data sets from U.C. Irvine Human Activity Recognition project
+* Extract the "mean" and "standard deviation" measurements
+* Assign descriptive labels to activity values and to sensor data variables
+* Calculate the average value of each selected measurement & place those results in a second tidy dataset
+
 ###Description of R script run_analysis.R:
 
 * The three test datasets (2947 rows each) and the three training datasets (7352 rows each) supplied by UCI are combined using rbind to make three datasets: activity codes (10,299 rows x 1 column), subject IDs (10,299 rows x 1 column), and feature data (10,299 rows x 561 columns).
