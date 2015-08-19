@@ -1,44 +1,44 @@
-CODEBOOK FOR ìGETTING & CLEANING DATAî COURSE PROJECT
+##Codebook for "Getting and Cleaning Data" Course Project
 
 
-Contents:
+###Contents:
 
-1. DATA SOURCE
-2. UCI FILES USED FOR PROJECT
-3. DATASET INFORMATION*
-4. ACTIVITY LABELS*
-5. SUBJECT IDENTIFIERS
-6. VARIABLES IN DATASET*
-7. VARIABLES & DATA TRANSFORMATIONS FOR COURSE PROJECT
-8. SELECTED FEATURES: MEAN & STANDARD DEVIATION MEASUREMENTS
-9. COMPREHENSIVE FEATURE LIST*
+1. Data source
+2. UCI files used for project
+3. Dataset information*
+4. Activity labels*
+5. Subject identifiers
+6. Variables in dataset*
+7. **Variables & data transformations for course project**
+8. Selected features: Mean & standard deviation measurements
+9. Comprehensive feature list*
 
-NOTE: * indicates that information in this section came with the datasets provided by UCI
+*NOTE: * indicates that information in this section came with the datasets provided by UCI*
 
 
-1. DATA SOURCE
+###1. DATA SOURCE
 
 University of California, Irvine (UCI) Machine Learning Repository, dataset #210994:
 Human Activity Recognition database built from the recordings of 30 subjects performing activities of daily living (ADL) while carrying a waist-mounted smartphone with embedded inertial sensors.
 
 
-2. UCI FILES USED FOR PROJECT
+###2. UCI FILES USED FOR PROJECT
 
 * README.txt provides the background information in Section 3 below
 * activity_labels.txt contains the list shown in Section 4 below
 * features_info.text contains the descriptive information in Section 6 below
 * features.txt contains the raw and derived sensor data (see list in Section 9 below)
 * test folder contains several files of equal length:
-        -- subject_test.txt lists the ID associated with each test-set record (2947 rows x 1 column)
-        -- X_test.txt contains the test-set feature data for each record (2947 rows x 561 columns)
-        -- y_test.txt lists the activity code associated with each test-set record (2947 rows x 1 column)
+  * subject_test.txt lists the ID associated with each test-set record (2947 rows x 1 column)
+  * X_test.txt contains the test-set feature data for each record (2947 rows x 561 columns)
+  * y_test.txt lists the activity code associated with each test-set record (2947 rows x 1 column)
 * train folder contains several files of equal length:
-        -- subject_train.txt lists the ID associated with each training-set record (7352 rows x 1 column)
-        -- X_train.txt contains the training-set feature data for each record (7352 rows x 561 columns)
-        -- y_train.txt lists the activity code associated with each training-set record (7352 rows x 1 column)
+  * subject_train.txt lists the ID associated with each training-set record (7352 rows x 1 column)
+  * X_train.txt contains the training-set feature data for each record (7352 rows x 561 columns)
+  * y_train.txt lists the activity code associated with each training-set record (7352 rows x 1 column)
 
 
-3. DATASET INFORMATION*
+###3. DATASET INFORMATION*
 
 The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data (see Section 5). 
 
@@ -52,26 +52,26 @@ For each record in the dataset the following is provided:
 - An identifier of the subject who carried out the experiment.
 
 
-4. ACTIVITY LABELS*
+###4. ACTIVITY LABELS*
 
 These labels are coded as integers in the original y_test and y_train files.
 
-1     WALKING
-2     WALKING_UPSTAIRS
-3     WALKING_DOWNSTAIRS
-4     SITTING
-5     STANDING
-6     LAYING
+1     WALKING  
+2     WALKING_UPSTAIRS  
+3     WALKING_DOWNSTAIRS  
+4     SITTING  
+5     STANDING  
+6     LAYING  
 
 
-5. SUBJECT IDENTIFIERS
+###5. SUBJECT IDENTIFIERS
 
-The 30 volunteer subjects were given integer IDs ranging from 1 to 30. 
-TRAINING data subject IDs (n=21): 1, 3, 5, 6, 7, 8, 11, 14, 15, 16, 17, 19, 21, 22, 23, 25, 26, 27, 28, 29, 30
+The 30 volunteer subjects were given integer IDs ranging from 1 to 30.   
+TRAINING data subject IDs (n=21): 1, 3, 5, 6, 7, 8, 11, 14, 15, 16, 17, 19, 21, 22, 23, 25, 26, 27, 28, 29, 30  
 TEST data subject IDs (n=9): 2, 4, 9, 10, 12, 13, 18, 20, 24
 
 
-6. VARIABLES IN DATASET*
+###6. VARIABLES IN DATASET*
 
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
@@ -82,56 +82,56 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
-tBodyAcc-XYZ
-tGravityAcc-XYZ
-tBodyAccJerk-XYZ
-tBodyGyro-XYZ
-tBodyGyroJerk-XYZ
-tBodyAccMag
-tGravityAccMag
-tBodyAccJerkMag
-tBodyGyroMag
-tBodyGyroJerkMag
-fBodyAcc-XYZ
-fBodyAccJerk-XYZ
-fBodyGyro-XYZ
-fBodyAccMag
-fBodyAccJerkMag
-fBodyGyroMag
-fBodyGyroJerkMag
+tBodyAcc-XYZ  
+tGravityAcc-XYZ  
+tBodyAccJerk-XYZ  
+tBodyGyro-XYZ  
+tBodyGyroJerk-XYZ  
+tBodyAccMag  
+tGravityAccMag  
+tBodyAccJerkMag  
+tBodyGyroMag  
+tBodyGyroJerkMag  
+fBodyAcc-XYZ  
+fBodyAccJerk-XYZ  
+fBodyGyro-XYZ  
+fBodyAccMag  
+fBodyAccJerkMag  
+fBodyGyroMag  
+fBodyGyroJerkMag  
 
 The set of variables that were estimated from these signals are: 
 
-mean(): Mean value
-std(): Standard deviation
-mad(): Median absolute deviation 
-max(): Largest value in array
-min(): Smallest value in array
-sma(): Signal magnitude area
-energy(): Energy measure. Sum of the squares divided by the number of values. 
-iqr(): Interquartile range 
-entropy(): Signal entropy
-arCoeff(): Autoregresion coefficients with Burg order equal to 4
-correlation(): correlation coefficient between two signals
-maxInds(): index of the frequency component with largest magnitude
-meanFreq(): Weighted average of the frequency components to obtain a mean frequency
-skewness(): skewness of the frequency domain signal 
-kurtosis(): kurtosis of the frequency domain signal 
-bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.
+mean(): Mean value  
+std(): Standard deviation  
+mad(): Median absolute deviation   
+max(): Largest value in array  
+min(): Smallest value in array  
+sma(): Signal magnitude area  
+energy(): Energy measure. Sum of the squares divided by the number of values.   
+iqr(): Interquartile range   
+entropy(): Signal entropy  
+arCoeff(): Autoregresion coefficients with Burg order equal to 4  
+correlation(): correlation coefficient between two signals  
+maxInds(): index of the frequency component with largest magnitude  
+meanFreq(): Weighted average of the frequency components to obtain a mean frequency  
+skewness(): skewness of the frequency domain signal   
+kurtosis(): kurtosis of the frequency domain signal   
+bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.  
 angle(): Angle between two vectors.
 
 Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
 
-gravityMean
-tBodyAccMean
-tBodyAccJerkMean
-tBodyGyroMean
-tBodyGyroJerkMean
+gravityMean  
+tBodyAccMean  
+tBodyAccJerkMean  
+tBodyGyroMean  
+tBodyGyroJerkMean  
 
 The complete list of variable names for each feature vector can be found in Section 9 below.
 
 
-7. VARIABLES & DATA TRANSFORMATIONS FOR COURSE PROJECT
+###**7. VARIABLES & DATA TRANSFORMATIONS FOR COURSE PROJECT**
 
 After loading the three test datasets and the three training datasets (see Section 2 above) into R, the files were combined to make three datasets of 10,299 rows each:
 
@@ -139,22 +139,22 @@ After loading the three test datasets and the three training datasets (see Secti
 * all_subj, listing the ID associated with each data record (10,299 rows x 1 column)
 * all_data, containing the feature data for each record (10,299 rows x 561 columns)
 
-As noted in Section 6, certain variables in the dataset were estimated based on the actual smartphone signal data. These derived variables included mean value and standard deviation, represented by appending ìmean()î or ìstd()î to the variable name along with the axial direction. Examples include tBodyAcc-mean()-X and tGravityAcc-std()-Y. For this assignment, the columns in all_data whose names contain either ìmean()î or ìstd()î were extracted from the list of 561 variables (columns) in the feature vector. There were 33 of each, so the dimensions of the new file, col_subset, are 10,299 rows x 66 columns. See Section 8 below for a list of the 66 selected features.
+As noted in Section 6, certain variables in the dataset were estimated based on the actual smartphone signal data. These derived variables included mean value and standard deviation, represented by appending ‚Äúmean()‚Äù or ‚Äústd()‚Äù to the variable name along with the axial direction. Examples include tBodyAcc-mean()-X and tGravityAcc-std()-Y. For this assignment, the columns in all_data whose names contain either ‚Äúmean()‚Äù or ‚Äústd()‚Äù were extracted from the list of 561 variables (columns) in the feature vector. There were 33 of each, so the dimensions of the new file, col_subset, are 10,299 rows x 66 columns. See Section 8 below for a list of the 66 selected features.
 
 The integer values in the all_activ file were transformed by replacing each activity code with its matching descriptive name as shown in Section 4 (WALKING, SITTING, etc.).
 
-The activity data, subject ID, and selected feature data were then combined into a single dataset of 10,299 rows x 68 columns. The first two columns are labeled ìActivityî and ìSubject_ID.î The remaining column labels are the 66 features containing either ìmean()î or ìstd()î in their names.
+The activity data, subject ID, and selected feature data were then combined into a single dataset of 10,299 rows x 68 columns. The first two columns are labeled ‚ÄúActivity‚Äù and ‚ÄúSubject_ID.‚Äù The remaining column labels are the 66 features containing either ‚Äúmean()‚Äù or ‚Äústd()‚Äù in their names.
 
 The process described above covers steps 1-4 of the assignment. Before creating the second dataset, the dplyr library was loaded to take advantage of its functionality.
 
-To create the second dataset as instructed in step 5, the data were grouped by activity and subject, and the averages (means) within each group were calculated for each of the 66 features. The results were reduced to a wide-form tidy dataset of unique values consisting of 180 rows (30 subjects x 6 activities) and 68 columns (Activity, Subject_ID, and the 66 previously selected features). Rows were sorted by Activity (in alphabetical order) and then by Subject_ID (from 1 to 30). New feature column labels with the prefix ìMean ofî were attached. This dataset of averages was saved as tidyset2.txt.
+To create the second dataset as instructed in step 5, the data were grouped by activity and subject, and the averages (means) within each group were calculated for each of the 66 features. The results were reduced to a wide-form tidy dataset of unique values consisting of 180 rows (30 subjects x 6 activities) and 68 columns (Activity, Subject_ID, and the 66 previously selected features). Rows were sorted by Activity (in alphabetical order) and then by Subject_ID (from 1 to 30). New feature column labels with the prefix ‚ÄúMean of‚Äù were attached. This dataset of averages was saved as tidyset2.txt.
 
-NOTE: To load the tidy dataset back into R, use this code:  read.table("tidyset2.txt", header=TRUE)
+NOTE: To load the tidy dataset back into R, use this code:  `read.table("tidyset2.txt", header=TRUE)`
 
 
-8. SELECTED FEATURES: MEAN & STANDARD DEVIATION MEASUREMENTS
+###8. SELECTED FEATURES: MEAN & STANDARD DEVIATION MEASUREMENTS
 
-These are the features extracted for Step 2 of the assignment. As noted in Section 6, variables with the prefix ìtî are in the time domain, and those with the prefix ìfî are in the frequency domain. Suffixes ì-X,î ì-Y,î and ì-Zî represent spatial axes. See Section 6 for definitions of derived-value suffixes such as ì-max()î and ì-min().î
+These are the features extracted for Step 2 of the assignment. As noted in Section 6, variables with the prefix ‚Äút‚Äù are in the time domain, and those with the prefix ‚Äúf‚Äù are in the frequency domain. Suffixes ‚Äú-X,‚Äù ‚Äú-Y,‚Äù and ‚Äú-Z‚Äù represent spatial axes. See Section 6 for definitions of derived-value suffixes such as ‚Äú-max()‚Äù and ‚Äú-min().‚Äù
 
 1 tBodyAcc-mean()-X
 2 tBodyAcc-mean()-Y
@@ -224,9 +224,9 @@ These are the features extracted for Step 2 of the assignment. As noted in Secti
 66 fBodyBodyGyroJerkMag-std()
 
 
-9. COMPREHENSIVE FEATURE LIST*
+###9. COMPREHENSIVE FEATURE LIST*
 
-This is the complete list of variables captured or derived as described in Section 6 above. As noted there, variables with the prefix ìtî are in the time domain, and those with the prefix ìfî are in the frequency domain. Suffixes ì-X,î ì-Y,î and ì-Zî represent spatial axes. See Section 6 for definitions of derived-value suffixes such as ì-max()î and ì-min().î
+This is the complete list of variables captured or derived as described in Section 6 above. As noted there, variables with the prefix ‚Äút‚Äù are in the time domain, and those with the prefix ‚Äúf‚Äù are in the frequency domain. Suffixes ‚Äú-X,‚Äù ‚Äú-Y,‚Äù and ‚Äú-Z‚Äù represent spatial axes. See Section 6 for definitions of derived-value suffixes such as ‚Äú-max()‚Äù and ‚Äú-min().‚Äù
 
 1 tBodyAcc-mean()-X
 2 tBodyAcc-mean()-Y
