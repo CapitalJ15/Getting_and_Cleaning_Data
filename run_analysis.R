@@ -24,7 +24,7 @@
      feature_list <- read.table("features.txt")
      mean_rows <- grepl("mean()", feature_list[,2], fixed=TRUE)  ## Identifies the 33 variable names containing "mean()"
      std_rows <- grepl("std()", feature_list[,2], fixed=TRUE)    ## Identifies the 33 variable names containing "std()"
-     pick_these <- which(mean_rows | std_rows)                   ## Creates a combined index vector to select those 66 variables
+     pick_these <- which(mean_rows | std_rows)       ## Creates a combined index vector to select those 66 variables
 
 ## Extract the mean and standard deviation measures from the sensor data table (66 columns out of 561)
      col_subset <- all_data[,pick_these]
